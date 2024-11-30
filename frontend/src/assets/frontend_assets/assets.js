@@ -10,10 +10,10 @@ import menu_5 from './menu_5.png'
 import menu_6 from './menu_6.png'
 import menu_7 from './menu_7.png'
 import menu_8 from './menu_8.png'
-
+import dosai from './dosai.png'
 import food_1 from './food_1.png'
 import food_2 from './food_2.png'
-import food_3 from './food_3.png'
+import image from './image.png'
 import food_4 from './food_4.png'
 import food_5 from './food_5.png'
 import food_6 from './food_6.png'
@@ -135,7 +135,7 @@ export const food_list = [
     }, {
         id: "3",
         name: "Clover Salad",
-        image: food_3,
+        image: image,
         price: 16,
         description: "Food provides essential nutrients for overall health and well-being",
         category: "Salad"
@@ -346,5 +346,11 @@ export const food_list = [
         price: 15,
         description: "Food provides essential nutrients for overall health and well-being",
         category: "Noodles"
+    },{id : "33",
+        name:"dosai",
+        image:dosai.png,
+        price:13,
+        description:"jpg",
+        category:"Deserts"
     }
 ]
