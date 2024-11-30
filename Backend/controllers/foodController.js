@@ -31,7 +31,6 @@ const addFood = async (req, res) => {
           category: req.body.category,
           image: image_filename,
         });
-    
         await food.save();
         console.log("Food saved successfully:", food);
     
