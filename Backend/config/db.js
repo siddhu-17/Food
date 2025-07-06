@@ -4,7 +4,7 @@ import mongoose from "mongoose";
 
 export const connectDB = async () => {
   try {
-    await mongoose.connect('mongodb+srv://greatstack:<db_password>@cluster0.erikw.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0');
+    await mongoose.connect('mongodb+srv://greatstack:5316@cluster0.erikw.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0');
    
     console.log("DB Connected");
   } catch (error) {
