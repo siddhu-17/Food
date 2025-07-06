@@ -59,7 +59,7 @@ const FoodItem = ({ id, name, price, description, image }) => {
           <img src={rating} alt="Rating stars" />
         </div>
         <p className='food-item-desc'>{description || 'No description available'}</p>
-        <p className='food-item-price'>{price || 'N/A'}</p>
+        <p className='food-item-price'> ₹ {price || 'N/A'}</p>
       </div>
     </div>
   );
