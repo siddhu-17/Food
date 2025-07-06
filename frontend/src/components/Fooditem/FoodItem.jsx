@@ -25,7 +25,7 @@ const FoodItem = ({ id, name, price, description, image }) => {
           src={image ? `${url}/images/${image}` : 'fallback-image-url.jpg'} 
           alt={name || 'Food item'} 
         />
-        {!cartitems[id] ? (
+        {!cartitems?.[id] (
           <img
             className='firstadd'
             onClick={handleAddToCart}
@@ -41,7 +41,8 @@ const FoodItem = ({ id, name, price, description, image }) => {
               src={decicon}
               alt="Decrease count"
             />
-            <p>{cartitems[id]}</p>
+           <p>{cartitems?.[id] ?? 0}</p>
+
             <img
               className='add'
               onClick={handleAddToCart}
