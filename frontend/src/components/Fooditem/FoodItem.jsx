@@ -25,7 +25,7 @@ const FoodItem = ({ id, name, price, description, image }) => {
           src={image ? `${url}/images/${image}` : 'fallback-image-url.jpg'} 
           alt={name || 'Food item'} 
         />
-        {!cartitems?.[id] (
+        {!cartitems?.[id] ? (
           <img
             className='firstadd'
             onClick={handleAddToCart}
